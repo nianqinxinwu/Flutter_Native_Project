@@ -62,7 +62,7 @@ class _MainViewGetX extends GetView<MainController> {
                 NavigationItemModel(
                   label: LocaleKeys.tabBarCart.tr,
                   icon: AssetsSvgs.navCartSvg,
-                  count: CartService.to.lineItemsCount,
+                  // count: CartService.to.lineItemsCount,
                 ),
 
                 // 信息
@@ -92,9 +92,9 @@ class _MainViewGetX extends GetView<MainController> {
           children: const [
             // 加入空页面占位
             HomePage(),
-            CartIndexPage(),
-            MsgIndexPage(),
-            MyIndexPage(),
+            ImPage(),
+            DiscoverPage(),
+            MyPage(),
           ],
         ),
       ),
