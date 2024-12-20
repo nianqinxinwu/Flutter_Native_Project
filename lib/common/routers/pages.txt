@@ -12,16 +12,16 @@
         page: () => const DiscoverPage(),
       ),
       GetPage(
+        name: RouteNames.home,
+        page: () => const HomePage(),
+      ),
+      GetPage(
         name: RouteNames.im,
         page: () => const ImPage(),
       ),
       GetPage(
         name: RouteNames.my,
         page: () => const MyPage(),
-      ),
-      GetPage(
-        name: RouteNames.search,
-        page: () => const SearchPage(),
       ),
       GetPage(
         name: RouteNames.shop,

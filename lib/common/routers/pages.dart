@@ -12,6 +12,7 @@ class RoutePages {
 
   static List<GetPage> list = [
 
+
       GetPage(
         name: RouteNames.detailpagesGoodsDetail,
         page: () => const GoodsDetailPage(),
@@ -23,6 +24,10 @@ class RoutePages {
       GetPage(
         name: RouteNames.discover,
         page: () => const DiscoverPage(),
+      ),
+      GetPage(
+        name: RouteNames.home,
+        page: () => const HomePage(),
       ),
       GetPage(
         name: RouteNames.im,

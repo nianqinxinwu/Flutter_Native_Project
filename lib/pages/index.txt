@@ -1,9 +1,9 @@
 export 'detailpages/goods_detail/index.dart';
 export 'detailpages/im_detail/index.dart';
 export 'discover/index.dart';
+export 'home/index.dart';
 export 'im/index.dart';
 export 'my/index.dart';
-export 'search/index.dart';
 export 'shop/index.dart';
 export 'system/login/index.dart';
 export 'system/main/index.dart';

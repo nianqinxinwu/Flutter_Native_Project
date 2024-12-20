@@ -1,11 +1,34 @@
 import 'package:get/get.dart';
-
+// import 'package:flutter_native_project/common/index.dart';
+import 'package:flutter/material.dart';
 import 'index.dart';
 
 class MainController extends GetxController {
   MainController();
 
   final state = MainState();
+  // 分页管理
+  final PageController pageController = PageController();
+
+  // 当前的 tab index
+  int currentIndex = 0;
+
+ // 导航栏切换
+  void onIndexChanged(int index) {
+    currentIndex = index;
+    update(['navigation']);
+  }
+
+  // 切换页面
+  void onJumpToPage(int page) {
+    pageController.jumpToPage(page);
+    // if ((page != 0) && !UserService.to.isLogin) {
+    //   Get.toNamed(RouteNames.systemLogin);
+    // } else {
+    //   pageController.jumpToPage(page);
+    // }
+  }
+
 
   // tap
   void handleTap(int index) {
@@ -37,5 +60,6 @@ class MainController extends GetxController {
   @override
   void dispose() {
     super.dispose();
+    pageController.dispose();
   }
 }
